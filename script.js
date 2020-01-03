@@ -56,14 +56,12 @@ function playRound(playerSelection) {
 }
 
 function displayScrollResult(result) {
-    scrollResult.classList.add("fade");
-    
+    scrollResult.innerHTML = result;
+    scrollResult.classList.toggle("fade");
     setTimeout(function() {
-        scrollResult.innerHTML = result;
-    }, 4000);
-    setTimeout(function() {
-        scrollResult.classList.toggle("fade");
-    }, 4000);
+        
+    }, 4000)
+    scrollResult.style.opacity = 0;
 };
 
 function displayScore() {
