@@ -1,0 +1,81 @@
+body {
+    background-color: darkgoldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    background-color: rgb(255, 255, 0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px #555;
+    border-radius: 10px;
+}
+
+#instructions {
+    font-size: 11px;
+}
+
+#scores {
+    margin: auto;
+    width:fit-content;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: rgb(54, 53, 0);
+}
+
+#scores p {
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#status {
+    font-weight: bold;
+}
+
+#buttons button {
+    /* Prevent user from highlighting the image */
+    user-select: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 2px 2px #555;
+}
+
+#buttons button:hover {
+    position: relative;
+    top: -2px;
+    right:2px;
+    box-shadow: 4px 4px;
+}
+
+#buttons button:active {
+    top: 2px;
+    right:-2px;
+}
+
+/* Remove outline when focus is on button */
+#buttons button:focus {
+    outline: none;
+}
+
+.buttonIcon {
+    max-width: 150px;
+    border-radius: 15px;
+}
+
+
+/* Scroll result */
+.fade {
+    animation: fadeOut 4s;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
